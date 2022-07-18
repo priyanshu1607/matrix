@@ -1,0 +1,18 @@
+section{
+    border: 2px solid red;
+    height: fit-content;
+    width: auto;
+    margin: 3px;
+    display: flex;
+}
+
+.About p,.about_BCM p{
+    
+    display: flex;
+    margin: 30px;
+    border: 2px solid black;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
