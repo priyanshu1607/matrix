@@ -1,13 +1,14 @@
-section{
-    border: 2px solid red;
+section {
+    border: 2px solid rgb(53, 3, 130);
     height: fit-content;
     width: auto;
     margin: 3px;
     display: flex;
 }
 
-.About p,.about_BCM p{
-    
+.About p,
+.about_BCM p {
+
     display: flex;
     margin: 30px;
     border: 2px solid black;
@@ -15,4 +16,88 @@ section{
     flex-wrap: wrap;
     align-content: center;
 
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about-matrix {
+    padding: 68px 0;
+}
+
+.about-matrix .about-matrix-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.about-matrix .about-matrix-content .content-left {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.about-matrix .about-matrix-content .content-left img {
+    width: 350px;
+}
+
+.about-matrix .about-matrix-content .content-right {
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+    margin-top: 30px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.about-matrix .about-matrix-content .content-right h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.about-matrix .about-matrix-content .content-right h2::after {
+    content: "";
+    position: absolute;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -9px;
+    background: #dedede;
+}
+
+.about-matrix .about-matrix-content .content-right h4 {
+    font-size: 16px;
+    line-height: 31px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.about-matrix .about-matrix-content .content-right h4:nth-child(3) {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.about-matrix .about-matrix-content .content-right h4 span {
+    font-weight: bold;
+}
+
+.about-matrix .about-matrix-content .rectangle {
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: -20px;
+    width: 390px;
+    height: 235px;
+    border: 10px solid #fced65;
+    z-index: -1;
 }
