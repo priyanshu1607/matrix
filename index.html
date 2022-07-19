@@ -18,32 +18,45 @@
 <body>
     <!-- nav bar -->
 
-    <nav class="navbar navbar-expand-lg bg-light">
+
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <a class="navbar-brand" href="#">Navbar</a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <div class="navbar-nav">
+                <ul class="nav justify-content-end">
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" aria-current="page" href="#">theme</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" aria-current="page" href="#">Roadmap</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">submit abstranct</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Abstract format</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><span>&vert;</span>
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Register</a>
+                    </li>
+
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
+
     </nav>
+
 
     <!-- about-matrix -->
     <section class="about-matrix">
@@ -51,11 +64,12 @@
             <div class="about-matrix-content">
                 <div class="content-left"><img src="src\Road Map.jpeg" alt="" /></div>
                 <div class="content-right">
-                    <h2>About us</h2>
-                    <h4><span>Matrix</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod similique
+                    <h2>About MAtrix</h2>
+                    <p> Porem ipsum dolor sit amet consectetur adipisicing elit. Quod similique
                         nobis magnam sed natus nulla asperiores distinctio cupiditate, perspiciatis illum facilis in
                         laborum amet quos veniam quas maiores et. Eligendi reprehenderit aliquid quasi modi cupiditate.
                         Esse perferendis repudiandae magnam distinctio.
+                    </p>
                 </div>
             </div>
         </div>
@@ -68,17 +82,27 @@
 
     <!-- road map -->
     <section class="roadmap">
-        <img src="src\Road Map.jpeg" alt="road map">
+        <div class="box">
+            <img src="src\Road Map.jpeg" alt="road map">
+        </div>
     </section>
 
     <!-- about bcm -->
-    <section class="about_BCM">
-        <h2>BCM 2.0</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptates reprehenderit ipsum ex harum quos
-            repellat atque. A, accusamus laboriosam tempora non magnam illo? Ex provident nihil ducimus velit quos quia
-            nesciunt suscipit odio quo sit, reprehenderit, maiores architecto blanditiis iste rem voluptate quam quas
-            aut id nemo doloremque voluptatem?</p>
-        <img src="" alt="bcm">
+    <section class="about-BCM">
+        <div class="container">
+            <div class="about-BCM-content">
+                <div class="content-left"><img src="src\Road Map.jpeg" alt="BCM logo" /></div>
+                <div class="content-right">
+                    <h2>About BCM</h2>
+                    <p> Porem ipsum dolor sit amet consectetur adipisicing elit. Quod similique
+                        nobis magnam sed natus nulla asperiores distinctio cupiditate, perspiciatis illum facilis in
+                        laborum amet quos veniam quas maiores et. Eligendi reprehenderit aliquid quasi modi cupiditate.
+                        Esse perferendis repudiandae magnam distinctio.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- Campus reps -->
@@ -173,12 +197,56 @@
         </section>
     </main>
     </section>
+
     <!-- Footer -->
     <section class="footer">
-        <footer>footer
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-discord"></i>
+        <footer>
+
+            <div id="master">
+                <div class="logo">
+
+                </div>
+                <div class="company">
+                    <h6>company</h6>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Developers</a></li>
+                </div>
+                <div class="communities">
+                    <h6>communities</h6>
+                    <li><a href="">Developers</a></li>
+                    <li><a href="">For Artists</a></li>
+
+                    <li><a href="">Advertising</a></li>
+                    <li><a href="">Investors</a></li>
+                    <li><a href="">Vendors</a></li>
+                </div>
+                <div class="USEFUL">
+                    <h6>USEFUL LINKS</h6>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Web Player</a></li>
+                    <li><a href="">Free Mobile App</a></li>
+
+                </div>
+                <div class="socials">
+                    <li class="instagram">
+                        <button>
+
+                        </button>
+                    </li>
+                    <li class="github">
+                        <button class="githubs">
+
+                        </button>
+                    </li>
+                    <li class="twitter">
+                        <button>
+
+                        </button>
+                    </li>
+                </div>
+            </div>
+
         </footer>
     </section>
 </body>
