@@ -51,7 +51,7 @@ flex-direction: column;
 }
 
 .faq-page:after {
-    content: "\284";
+    content: " ";
     /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
@@ -60,6 +60,6 @@ flex-direction: column;
 }
 
 .active:after {
-    content: "\282";
+    content: " ";
     /* Unicode character for "minus" sign (-) */
 }
