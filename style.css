@@ -21,22 +21,27 @@ ul {
 }
 
 /* count down */
-#demo {
+#Timer {
+    padding: 10px 5px 10px 5px;
     font-size: large;
-    background-color: white;
+    background-color: silver;
     color: black;
     margin: auto;
     width: fit-content;
     border: 2px solid black;
-    /* float: inline-end; */
     z-index: 100;
     position: relative;
-    top: 5rem;
-
-
-
+    top: 5.5rem;
+    border-radius: 30px;
 }
 
+#Timer:hover {
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0px 5px 5px 0px rgba(255, 192, 203, 0.65)
+}
 /* header */
 header {
     display: flex;
@@ -150,36 +155,33 @@ header {
 .roadmap {
     align-content: end;
     justify-content: center;
-    height: fit-content;
-
+    height: max-content;
 }
 
 .roadmap img {
-
-    width: 16em;
-    height: 16em;
+    width: 92%;
+    height: 92%;
     position: relative;
     z-index: 1;
 }
 
 .box {
     position: relative;
-    width: 300px;
-    height: 300px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
     overflow: hidden;
-    margin: 4px;
+ 
 }
 
 .box::before {
     content: "";
     position: absolute;
-    width: 150px;
+    width: 150%;
     height: 150%;
-    background: linear-gradient(yellow, blue);
+    background: linear-gradient(#d928c0, #e3e3e3);
     animation: animate 4s linear infinite;
 }
 
@@ -197,7 +199,6 @@ header {
         transform: rotate(360deg);
     }
 }
-
 
 /* about BCM */
 
@@ -252,14 +253,14 @@ header {
 /* footer */
 
 .footer {
-    color: gray;
+    color:white;
     background-color: black;
     height: 300px;
     width: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+z-index: 4;
 
 }
 
