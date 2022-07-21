@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(#350441, #020024);
+    background: linear-gradient(#6d053b, #020024e7);
 }
 
 section {
@@ -18,6 +18,23 @@ section {
 ul {
     float: right;
     width: 100%;
+}
+
+/* count down */
+#demo {
+    font-size: large;
+    background-color: white;
+    color: black;
+    margin: auto;
+    width: fit-content;
+    border: 2px solid black;
+    /* float: inline-end; */
+    z-index: 100;
+    position: relative;
+    top: 5rem;
+
+
+
 }
 
 /* header */
@@ -104,6 +121,24 @@ header {
     text-align: right;
 }
 
+.window:hover {
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0px 5px 5px 0px white;
+
+}
+
+.window1:hover {
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0px 5px 5px 0px white;
+
+}
+
 .Theme ul {
     padding-left: 10em;
     padding-right: 10em;
@@ -167,6 +202,7 @@ header {
 /* about BCM */
 
 .about-BCM {
+    background-color: #1d1b1c;
     padding: 68px 0;
 }
 
