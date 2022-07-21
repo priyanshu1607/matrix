@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
 * {
-    font-family: 'Bitter', serif;
+    font-family: 'Lato', sans-serif;
     color: white;
+    list-style: none;
+    overflow-x: hidden;
 
 }
 
@@ -15,15 +20,20 @@ section {
     display: flex;
 }
 
+p{font-size: 1.3rem;}
+
 ul {
     float: right;
     width: 100%;
 }
-
+/* NAV BAR */
+#navbar a{ 
+    color: #ffc2f0;;
+}
 /* count down */
 #Timer {
-    padding: 10px 5px 10px 5px;
-    font-size: large;
+    padding: 20px 15px 20px 15px;
+    font-size: 3rem;
     background-color: silver;
     color: black;
     margin: auto;
@@ -31,17 +41,17 @@ ul {
     border: 2px solid black;
     z-index: 100;
     position: relative;
-    top: 5.5rem;
+    top: 7rem;
     border-radius: 30px;
 }
 
-#Timer:hover {
+/* #Timer:hover {
     -webkit-transform: scale(1.1);
-    /* Safari 3-8 */
+    /* Safari 3-8 
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 0px 5px 5px 0px rgba(255, 192, 203, 0.65)
-}
+} */
 /* header */
 header {
     display: flex;
@@ -59,8 +69,16 @@ header {
     flex-direction: column;
 }
 
+
+
 .about-matrix {
     padding: 68px 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .about-matrix-content {
+        flex-direction: column;
+    }
 }
 
 .about-matrix .about-matrix-content {
@@ -95,6 +113,48 @@ header {
     margin-bottom: 40px;
     position: relative;
 }
+
+
+
+  /* Button Styling Starts Here */
+  .button_slide {
+    color: #FFF;
+    border: 2px solid rgb(216, 2, 134);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+  .slide_down:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+  }
+  
+  .slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #D80286;
+  }
+  
+  .slide_left:hover {
+    box-shadow: inset 0 0 0 50px #D80286;
+  }
+  
+  .slide_diagonal:hover {
+    box-shadow: inset 400px 50px 0 0 #D80286;
+  }
+  
+  #outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
+  
 
 /* theme */
 .Theme {
@@ -200,10 +260,75 @@ header {
     }
 }
 
+
+
+/* sponsers */
+
+
+.sponsor-section{
+    width: 100vw;
+    height: 40vh;
+    background-color: white;
+    
+  }
+  @media screen and (max-width: 1200px) {
+
+    .sponsor-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sponsor-section h2{
+        font-size: 8em;
+    }
+  }
+  .sponsor-heading{
+      margin: auto;
+      
+  }
+  
+  .sponsor-heading h2{
+      font-size: 3rem;
+  
+  }
+  
+  .animate-charcter
+  {
+     text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    /* text fill is not known */
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 100px;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  
+
 /* about BCM */
 
 .about-BCM {
-    background-color: #1d1b1c;
+    /* background-color: #1d1b1c; */
+    background: linear-gradient(#1d1b1c, #020024e7);
     padding: 68px 0;
 }
 
@@ -213,12 +338,17 @@ header {
     justify-content: space-between;
     position: relative;
 }
-
+@media screen and (max-width: 1200px) {
+    .about-BCM-content {
+        flex-direction: column;
+    }
+}
 .about-BCM .aboutBCM-content .content-left {
     width: 80%;
     display: flex;
     align-items: center;
 }
+
 
 .about-BCM .about-BCM-content .content-left img {
     width: 350px;
@@ -238,20 +368,27 @@ header {
     position: relative;
 }
 
-
-/* sponsers */
-.sponsor {
-    flex-direction: column;
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: fit-content;
 }
 
-.sponsor p {
-    justify-content: center;
-    text-align: center;
-    font-size: 2em;
+.socials i{
+    font-size: 3rem;
+    padding: 2rem;
 }
-
+.socials i:hover{
+    color: blue;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 /* footer */
 
+
+/* Footer section eliminated by Rishabh */
+/* 
 .footer {
     color:white;
     background-color: black;
@@ -324,3 +461,5 @@ footer h6 {
     width: 10em;
     height: 10em;
 }
+
+ */

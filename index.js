@@ -35,3 +35,23 @@ var x = setInterval(function() {
     document.getElementById("Timer").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+// NAV BAR SCROLLING 
+
+
+    window.onscroll = function() {scrollFunction()};
+ 
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     
+     document.getElementById("navbar").style.background = "#1d1b1c"
+     document.getElementById("navbar").style.transition = "1s"
+   } else {
+    
+     document.getElementById("navbar").style.background = "none";
+     document.getElementById("navbar").style.transition = "1s"
+   
+   }
+ }
+
