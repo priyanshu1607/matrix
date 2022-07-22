@@ -1,6 +1,6 @@
 
 // Set the date we're counting down to
-var countDownDate = new Date("July 23, 2022 15:37:25").getTime();
+var countDownDate = new Date("July 25, 2022 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -22,9 +22,7 @@ var x = setInterval(function() {
     document.getElementById("Timer").innerHTML = hours + "h "
     + minutes + "m " + seconds + "s "
   }
-  else if (days==0 & hours == 0) {
-    document.getElementById("Timer").innerHTML = minutes + "m " + seconds + "s "
-  } else {
+else{  
     document.getElementById("Timer").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";}
 
@@ -32,7 +30,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("Timer").innerHTML = "EXPIRED";
+    document.getElementById("Timer").innerHTML = "contest started";
   }
 }, 1000);
 

@@ -1,23 +1,27 @@
-.FAQ{
- 
+.FAQ {
+
     color: black;
 }
-.faq-heading{
- text-align: center;
+
+.faq-heading {
+    text-align: center;
     border-bottom: #777;
     padding: 20px 60px;
 }
-.faq-container{
-display: flex;
-justify-content: center;
-flex-direction: column;
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
-.hr-line{
-  width: 60%;
-  margin: auto;
-  
+
+.hr-line {
+    width: 60%;
+    margin: auto;
+
 }
+
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
     /* background-color: #eee; */
@@ -31,11 +35,12 @@ flex-direction: column;
     margin: auto;
 
 }
-.faq-body{
+
+.faq-body {
     margin: auto;
-   width: 50%; 
-   padding: auto;
-   
+    width: 50%;
+    padding: auto;
+
 }
 
 
@@ -48,7 +53,7 @@ flex-direction: column;
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
     padding: 0 18px;
-    background-color: rgb(94, 40, 120);
+    background-color: transparent;
     display: none;
     overflow: hidden;
 }
