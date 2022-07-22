@@ -34,6 +34,16 @@ ul {
     color: #ffc2f0;
     ;
 }
+@media screen and (max-width:990px) {
+ 
+#navbar ul li{
+    float: both;
+    }   
+
+#navbar ul li:nth-child(6){
+    display: none;
+    }   
+}
 
 /* count down */
 #Timer {
@@ -207,14 +217,14 @@ header {
     .window2 {
         text-align: center;
         float: none;
-        width: 50%;
+        width: fit-content;
         
     }
     
     .window1 {
         text-align: center;
-        width: 50%;
         float: none;
+        width: fit-content;
     }
 
 
