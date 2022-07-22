@@ -271,7 +271,6 @@ header {
     background-color: white;
     
   }
-<<<<<<< HEAD
   @media screen and (max-width: 1200px) {
 
     .sponsor-section{
@@ -283,9 +282,6 @@ header {
         font-size: 8em;
     }
   }
-=======
-  
->>>>>>> 9d22516ff41b78a2222fb9e669df2055b953ca81
   .sponsor-heading{
       margin: auto;
       
@@ -311,10 +307,7 @@ header {
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-<<<<<<< HEAD
     /* text fill is not known */
-=======
->>>>>>> 9d22516ff41b78a2222fb9e669df2055b953ca81
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
