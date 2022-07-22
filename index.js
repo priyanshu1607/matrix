@@ -53,3 +53,18 @@ else{
    }
  }
 
+//  toggling color on button (for phones)
+ const btn = document.getElementById('btn');
+ const nav = document.getElementById('navbar')
+
+ btn.addEventListener('click', function onClick(event) {
+   const backgroundColor = nav.style.backgroundColor;
+ 
+   if (backgroundColor === '') {
+     nav.style.backgroundColor = 'black';
+ 
+   } else {
+     nav.style.backgroundColor = '';
+
+   }
+ });

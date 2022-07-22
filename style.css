@@ -9,6 +9,8 @@
 
 }
 
+
+
 body {
     background: linear-gradient(#6d053b, #020024e7);
 }
@@ -34,6 +36,12 @@ ul {
     color: #ffc2f0;
     ;
 }
+
+#navbar:hover{
+background-color: black;
+transition: 1s;
+}
+
 @media screen and (max-width:990px) {
  
 #navbar ul li{
