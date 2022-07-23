@@ -323,19 +323,49 @@ header {
     width: 100vw;
     height: 40vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 
 }
 
-@media screen and (max-width: 1200px) {
+
+
+@media screen and (max-width: 1000px) {
 
     .sponsor-section {
         display: flex;
         flex-direction: column;
+
+    }
+
+    .sponsor-section p{
+        font-size: 4rem;
     }
 
     .sponsor-section h2 {
         font-size: 8em;
     }
+
+   
+}
+
+@media screen and (max-width: 400px) {
+
+    .sponsor-section {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .sponsor-section p{
+        font-size: 2rem;
+    }
+
+    .sponsor-section h2 {
+        font-size: 1.5em;
+    }
+
+   
 }
 
 .sponsor-heading {
@@ -347,6 +377,7 @@ header {
     font-size: 3rem;
 
 }
+
 
 .animate-charcter {
     text-transform: uppercase;
