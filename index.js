@@ -61,7 +61,7 @@ else{
    const backgroundColor = nav.style.backgroundColor;
  
    if (backgroundColor === '') {
-     nav.style.backgroundColor = 'black';
+     nav.style.backgroundColor = '#1d1b1c;';
  
    } else {
      nav.style.backgroundColor = '';
