@@ -268,7 +268,8 @@ header {
 
 
 /* roadmap */
-.roadmap {
+.roadmap { 
+    margin-top: 4em;
     align-content: end;
     justify-content: center;
     height: max-content;
