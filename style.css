@@ -12,12 +12,11 @@
 
 
 body {
-    background: linear-gradient(to right,#1f075f, #671f83);
+    background: linear-gradient(to right, #1f075f, #6a1f84);
     /* background: linear-gradient(#6d053b, #020024e7); */
 }
 
 section {
-    margin: 0.1em, 0px;
     height: fit-content;
     width: 100%;
     display: flex;
@@ -38,33 +37,34 @@ ul {
     ;
 }
 
-#navbar:hover{
-background-color: #1d1b1c;
-transition: 1s;
+#navbar:hover {
+    background-color: #1d1b1c;
+    transition: 1s;
 }
 
 @media screen and (max-width:990px) {
- 
-#navbar ul li{
-    float: both;
-    }   
 
-#navbar ul li:nth-child(6){
-    display: none;
-    }   
+    #navbar ul li {
+        float: both;
+    }
+
+    #navbar ul li:nth-child(6) {
+        display: none;
+    }
 }
-
-
 
 
 /* header */
 
 header {
     background: url('src/Matrix logo v2.jpeg');
+    background-repeat: no-repeat;
+    padding-top: 56.25%; 
+    background-size: 100%, auto;
     display: flex;
     align-items: center;
     justify-content: center;
-   }
+}
 
 /* count down */
 #Timer {
@@ -81,7 +81,7 @@ header {
     border-radius: 30px;
 }
 
-@media screen and  (max-width: 780px) {
+@media screen and (max-width: 780px) {
     #Timer {
         padding: 15px 10px 15px 10px;
         font-size: 2rem;
@@ -187,13 +187,16 @@ header {
 
 
 /* theme */
+
 .Theme {
-    margin: 10px 0px 10px 0px;
+    display: flex;
     justify-content: center;
-    flex-direction: column;
+    margin: 10px 0px 10px 0px;
 
 }
 
+
+/*
 .window2 {
     border-radius: 5px;
     padding: 10px;
@@ -239,7 +242,7 @@ header {
 
 .window2:hover {
     -webkit-transform: scale(1.1);
-    /* Safari 3-8 */
+   
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 0px 5px 5px 0px white;
@@ -248,7 +251,7 @@ header {
 
 .window1:hover {
     -webkit-transform: scale(1.1);
-    /* Safari 3-8 */
+   
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 0px 5px 5px 0px white;
@@ -261,7 +264,7 @@ header {
     padding-right: 10em;
     float: right;
     width: 100%;
-}
+} */
 
 
 /* roadmap */
@@ -294,7 +297,7 @@ header {
     position: absolute;
     width: 150%;
     height: 150%;
-    background: linear-gradient(#1f065a, #6a1f84);
+    background: linear-gradient(#d928c0, #e3e3e3);
     animation: animate 4s linear infinite;
 }
 
@@ -312,6 +315,7 @@ header {
         transform: rotate(360deg);
     }
 }
+
 
 
 
