@@ -7,13 +7,13 @@
     list-style: none;
     overflow-x: hidden;
 
+
 }
 
 
 
 body {
-    background: linear-gradient(to right, #1f075f, #6a1f84);
-    /* background: linear-gradient(#6d053b, #020024e7); */
+    background: linear-gradient(to right, #1f075f, #6a1f84)
 }
 
 section {
@@ -55,30 +55,38 @@ ul {
 
 
 /* header */
-
 header {
-    background: url('src/Matrix logo v2.jpeg');
-    background-repeat: no-repeat;
-    padding-top: 56.25%;
-    background-size: 100%, auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    /* align-items: center; */
+
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 /* count down */
-#Timer {
-    padding: 20px 15px 20px 15px;
-    font-size: 3rem;
-    background-color: silver;
-    color: black;
-    margin: auto;
-    width: fit-content;
-    border: 2px solid black;
-    z-index: 2;
-    position: relative;
-    top: 7rem;
-    border-radius: 30px;
+
+.Timer {
+    display: flex;
+    justify-content: center;
+}
+
+.countdown-container {
+    display: flex;
+}
+
+.countdown-container>div {
+    margin: 0 1rem;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    width: 5rem;
 }
 
 @media screen and (max-width: 780px) {
@@ -105,11 +113,7 @@ header {
     padding: 68px 0;
 }
 
-@media screen and (max-width: 1400px) {
-    .about-matrix-content {
-        flex-direction: column;
-    }
-}
+
 
 .about-matrix .about-matrix-content {
     padding: 4em;
@@ -118,6 +122,13 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    background-color: #111111;
+}
+
+@media screen and (max-width: 1400px) {
+    .about-matrix-content {
+        flex-direction: column;
+    }
 }
 
 .about-matrix .aboutmatrix-content .content-left {
@@ -268,10 +279,9 @@ header {
 
 
 /* roadmap */
-.roadmap { 
-    margin-top: 4em;
+.roadmap {
     align-content: end;
-    justify-content: center;
+    justify-content: flex-start;
     height: max-content;
 }
 
@@ -288,7 +298,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
     overflow: hidden;
 
 }
@@ -395,8 +404,6 @@ header {
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-    /* text fill is not known */
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
@@ -479,20 +486,16 @@ header {
 /* footer */
 
 
-/* Footer section eliminated by Rishabh */
-/* 
+
 .footer {
-    color:white;
+    color: white;
     background-color: black;
-    height: 300px;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-z-index: 4;
-
 }
 
+/* 
 footer a {
     color: #625858;
     text-decoration: none;
@@ -552,6 +555,4 @@ footer h6 {
 .logo img {
     width: 10em;
     height: 10em;
-}
-
- */
+} */
