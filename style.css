@@ -286,7 +286,8 @@ header img {
 .roadmap {
     align-content: end;
     justify-content: flex-start;
-    height: max-content;
+    height: 100vh;
+    
 }
 
 .roadmap img {
@@ -309,8 +310,8 @@ header img {
 .box::before {
     content: "";
     position: absolute;
-    width: 170%;
-    height: 170%;
+    width: 180%;
+    height: 180%;
     background: linear-gradient(#1f075f, #6b1e84);
     animation: animate 4s linear infinite;
 }
