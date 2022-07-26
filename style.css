@@ -20,11 +20,14 @@ section {
     height: fit-content;
     width: 100%;
     display: flex;
+    margin: bottom 5em;
 }
 
 p {
     font-size: 1.3rem;
 }
+
+
 
 ul {
     float: right;
@@ -106,7 +109,6 @@ header img {
     display: flex;
     flex-direction: column;
 }
-
 
 
 .about-matrix {
@@ -199,13 +201,15 @@ header img {
 
 /* theme */
 
+
+
 .Theme {
     display: flex;
     justify-content: center;
-    margin: 10px 0px 10px 0px;
+    align-items: center;
+    /* margin: 10px 0px 10px 0px; */
 
 }
-
 
 /*
 .window2 {
@@ -305,8 +309,8 @@ header img {
 .box::before {
     content: "";
     position: absolute;
-    width: 150%;
-    height: 150%;
+    width: 170%;
+    height: 170%;
     background: linear-gradient(#1f075f, #6b1e84);
     animation: animate 4s linear infinite;
 }
