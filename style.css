@@ -6,8 +6,6 @@
     color: white;
     list-style: none;
     overflow-x: hidden;
-
-
 }
 
 
@@ -201,93 +199,19 @@ header img {
 
 /* theme */
 
-
-
 .Theme {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 10px 0px 10px 0px; */
 
 }
-
-/*
-.window2 {
-    border-radius: 5px;
-    padding: 10px;
-    margin: 26px;
-    box-shadow: 0px 5px 5px 0px black;
-    width: 40%;
-    float: left;
-    text-align: right;
-}
-
-.window1 {
-    border-radius: 5px;
-    padding: 10px;
-    margin: 26px;
-    box-shadow: 0px 5px 5px 0px black;
-    width: 40%;
-    float: right;
-    text-align: right;
-}
-
-@media screen and (max-width: 1000px) {
-
-    .Theme ul{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .window2 {
-        text-align: center;
-        float: none;
-        width: fit-content;
-        
-    }
-    
-    .window1 {
-        text-align: center;
-        float: none;
-        width: fit-content;
-    }
-
-
-}
-
-.window2:hover {
-    -webkit-transform: scale(1.1);
-   
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 0px 5px 5px 0px white;
-
-}
-
-.window1:hover {
-    -webkit-transform: scale(1.1);
-   
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 0px 5px 5px 0px white;
-
-}
-
-
-.Theme ul {
-    padding-left: 10em;
-    padding-right: 10em;
-    float: right;
-    width: 100%;
-} */
 
 
 /* roadmap */
 .roadmap {
     align-content: end;
-    justify-content: flex-start;
-    height: 100vh;
-    
+    height: 40em;
+
 }
 
 .roadmap img {
@@ -299,19 +223,19 @@ header img {
 
 .box {
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin: 50px;
 
 }
 
 .box::before {
     content: "";
     position: absolute;
-    width: 180%;
-    height: 180%;
+    width: 210%;
+    height: 190%;
     background: linear-gradient(#1f075f, #6b1e84);
     animation: animate 4s linear infinite;
 }
@@ -331,13 +255,18 @@ header img {
     }
 }
 
+.roadmap ul li:before {
+    content: '\2014';
+}
 
-
+.roadmap li{
+    margin: 2em;
+    font-size: 1.9em;
+}
 
 /* sponsers */
-
-
 .sponsor-section {
+    margin-bottom: 10px;
     width: 100vw;
     height: 40vh;
     background-color: white;
@@ -427,7 +356,6 @@ header img {
 /* about BCM */
 
 .about-BCM {
-    /* background-color: #1d1b1c; */
     background: linear-gradient(#1d1b1c, #020024e7);
     padding: 68px 0;
 }
@@ -499,65 +427,3 @@ header img {
     display: flex;
     justify-content: space-evenly;
 }
-
-/* 
-footer a {
-    color: #625858;
-    text-decoration: none;
-}
-
-#master {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-
-
-.company,
-.communities,
-.USEFUL {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-}
-
-footer li {
-    text-decoration: none;
-    list-style: none;
-    margin: 10px 0px;
-
-}
-
-.socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: fit-content;
-    width: 100px;
-}
-
-.instagram:hover,
-.github:hover,
-.twitter:hover {
-    cursor: pointer;
-}
-
-footer h6 {
-    margin: 2px;
-    font-size: 1rem;
-}
-
-.logo,
-.company,
-.communities,
-.USEFUL,
-.socials {
-    margin: 40px;
-}
-
-.logo img {
-    width: 10em;
-    height: 10em;
-} */
