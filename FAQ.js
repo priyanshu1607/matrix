@@ -1,5 +1,5 @@
 
-var faq = document.getElementsByClassName("faq-page");
+var faq = document.getElementsByClassName("accordion");
 var i;
 for (i = 0; i < faq.length; i++) {
     faq[i].addEventListener("click", function () {
