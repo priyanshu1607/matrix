@@ -9,7 +9,9 @@
         
 }
 
-
+h1{
+    text-align: center;
+}
 
 body {
     background: linear-gradient(to right, #1f075f, #6a1f84)
@@ -241,7 +243,7 @@ header img {
 .box::before {
     content: "";
     position: absolute;
-    width: 210%;
+    width: 300%;
     height: 190%;
     background: linear-gradient(#1f075f, #6b1e84);
     animation: animate 4s linear infinite;
