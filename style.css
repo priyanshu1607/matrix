@@ -220,30 +220,34 @@ header img {
 .roadmap {
     align-content: end;
     height: 40em;
+ height: min-content;
 
 }
 
 .roadmap img {
-    width: 92%;
-    height: 92%;
+    /* width: 92%;
+    height: 92%; */
     position: relative;
     z-index: 1;
+    padding: 2em;
 }
 
 .box {
+    height: max-content;
+    width: max-content;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin: 50px;
+    /* margin: 50px; */
 
 }
 
 .box::before {
     content: "";
     position: absolute;
-    width: 300%;
+    width: 200%;
     height: 190%;
     background: linear-gradient(#1f075f, #6b1e84);
     animation: animate 4s linear infinite;
@@ -269,7 +273,7 @@ header img {
 }
 
 .roadmap ul{
-    
+    height: fit-content;    
     overflow-y: hidden;
 }
 .roadmap li{
@@ -277,6 +281,18 @@ header img {
     font-size: 1.9em;
 }
 
+@media screen and (max-width: 950px) {
+    
+    .roadmap ul{
+        height: fit-content;    
+        overflow-y: hidden;
+    }
+    .roadmap li{
+        margin: 1em 0em 1em 0em;
+        font-size:medium
+    }
+}
+    
 /* sponsers */
 .sponsor-section {
     margin-bottom: 10px;
